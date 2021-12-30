@@ -1,4 +1,4 @@
-package com.cydeo.utility;
+package com.trycloud.utility;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
