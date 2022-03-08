@@ -1,11 +1,13 @@
 package com.trycloud.pages;
 
+import lombok.Getter;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import static com.trycloud.utility.Driver.getDriver;
 
+@Getter
 public class FilesPage {
     @FindBy(xpath = "//label[@for='select_all_files']")
     private WebElement select_all_files;

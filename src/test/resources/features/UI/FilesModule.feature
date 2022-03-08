@@ -16,7 +16,13 @@ Feature: Files Module
     Then all uploaded files should be selected
 
   Scenario: User can add a file to favorites
-    When user adds file to favourites
+    When user adds file to favorites
     And user goes to the "Favorites" menu
-    Then the file should be amount the favourites
+    Then the file should be added to favorites
     # ToDO fix getting files in favorite & all files present.
+
+  Scenario: User can remove a file from favorites
+    And user goes to the "Favorites" menu
+    And there are files present in favorites
+    When user removes a file from favorites
+    Then the file should be removed from favorites
